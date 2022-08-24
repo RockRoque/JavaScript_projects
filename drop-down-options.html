@@ -1,0 +1,167 @@
+
+<div id="wrapper">
+	<div id="bodymain">
+		<div id="body1col">{source trim='true'}&lt;script language="javascript"&gt;<br />var myBC = "&lt;ul class='breadcrumb'&gt;&lt;li&gt;&lt;a href='https://www.ttb.gov'&gt;TTB Home&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Financial Hardship Contact Request&lt;/li&gt;&lt;/ul&gt;";<br />&lt;/script&gt;{/source}
+			<section>
+				<h1>Online Tax Simplification Pilot Form Submission</h1>
+				<div id="importantFooter">
+					<p style="margin-left: 10px;"><img src="images/important.png" alt="Yellow icon with a black exclamation mark." width="29" height="29" align="absmiddle" /> To ensure better handling and processing, we strongly encourage you to attach and submit your return to this contact form on or before the tax return due date. We highly encourage you to submit an electronic payment via Automated Clearing House (ACH) or Electronic Funds Transfer (EFT) on or before the tax return due date, and note your EIN, Registry Number and tax period on each submission, to ensure your payment is applied to the proper account.</p>
+				</div>
+				<p>&nbsp;</p>
+				<p><strong>You must be pre-approved to participate in this pilot.</strong><a href="https://www.ttb.gov/contact-nrc"> Contact us</a> for additional information.</p>
+				<p>Use this form to submit the Pilot Brewer’s Excise Tax Return &amp; Report of Operations Form, TTB F 5130.pilot-1 in lieu of the Excise Tax Return, TTB F 5000.24 and the Report of Operations, Form 5130.9 or Form 5130.26, at the frequencies set forth for tax return filing at 27 CFR 25.164.</p>
+				<p>If you owe tax with your TTB F 5130.pilot-1, you must submit your payment separately. See instructions below.</p>
+				<p><strong>INSTRUCTIONS:</strong></p>
+				<ol>
+					<li><strong>Complete the pilot Simplified Tax Return/Report form</strong><br />Make sure you sign and date the bottom of the TTB F 5130.pilot 1.</li>
+					<li><strong>Submit the pilot Simplified Tax Return/Report form</strong><br />Attach one TTB F 5130.pilot-1 per brewery location on or before the excise tax due date.</li>
+					<li><strong>Submit payment separately</strong><br />Your payment must be received or postmarked on or before the excise tax due date, to avoid penalties and interest.
+						<ul style="list-style-type: disc;">
+							<li>Send an automated clearing house (ACH) or electronic funds transfer (EFT) payment. We encourage you to use this method to avoid a delay in processing your payment.</li>
+							<li>Mail a check or money order, if you are unable to send an electronic payment, to: Alcohol and Tobacco Tax and Trade Bureau, 550 Main Street, Suite 8002, Cincinnati, Ohio 45202.</li>
+							<li>Notate your ACH or EFT payment or the memo area of the check or money order your EIN, Registry Number and tax period to ensure your payment is applied to the proper account.</li>
+						</ul>
+					</li>
+				</ol>
+				<h2>Return/Report Submission</h2>
+				<p><span style="color: #ff0000;">*Required field</span></p>
+			</section>
+			<form id="form1" action="/simple-tax-action" enctype="multipart/form-data" method="post" name="form1"><input id="FiName" name="FiName" type="hidden" value="No File" /><input name="tspaction" type="hidden" value="submit" />
+				<table style="width: 100%; padding-bottom: 1rem;" border="0" cellspacing="2" cellpadding="2">
+					<tbody>
+						<tr>
+							<td colspan="4">
+								<p style="margin-bottom: 1rem;"><strong>SUBMITTER CONTACT INFORMATION</strong></p>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4"><strong>*First Name</strong><span id="F1" style="padding-left: 1.22rem;"></span> <input id="fname" name="fname" required="required" size="50" type="text" /></td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td colspan="4"><strong>*Last Name</strong><span id="F2" style="padding-left: 1.6rem;"></span><input id="lname" name="lname" required="required" size="50" type="text" /></td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td colspan="4"><strong>*Email</strong><span id="F3" style="padding-left: 4rem;"></span><input id="email" name="email" required="required" size="50" type="email" /></td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td colspan="4">
+								<h2><strong>RETURN INFORMATION</strong></h2>
+								<div id="importantFooterNote" style="border-left: 6px solid #2196F3;"><img style="float: left; margin-top: 10px; margin-right: 10px;" src="/images/TTB-info-icon.png" alt="Blue icon with a white circle around an exclamation mark for a note." width="40" height="40" />
+									<p style="padding-top: 5px;">The return/report form must include the signature and title of a person authorized to sign on behalf of the company/taxpayer.</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4"><strong><br />*Taxpayer Name:</strong>&nbsp;&nbsp;<span id="F4" style="padding-left: 1rem;"></span><input id="tpname" name="tpname" required="required" size="50" type="text" /></td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td colspan="4"><strong><br />*EIN </strong><em>(</em><em>Employer Identification Number (EIN) (Ex: 00-0000000, or XX-0000000)</em>&nbsp;&nbsp;<span id="F5"></span><input id="EIN" onclick="lettersNumbersCheck(document.form1.name)" name="ein" required="required" size="50" type="text" /></td>
+							<td>&nbsp;</td>
+						</tr>
+						<!--<tr> ORIG. EIN function call
+							<td colspan="4"><strong><br />*EIN </strong><em>(</em><em>Employer Identification Number, Ex: 12-3456789)</em>&nbsp;&nbsp;<span id="F5"></span><input id="ein" onchange="checkMeEIN();" name="ein" required="required" size="50" type="text" /></td>
+							<td>&nbsp;</td>
+						</tr>-->
+						<tr>
+							<td colspan="4"><strong><br />*Permit/Registry Number </strong><em>(</em><em>Ex: BR-MD-1234):</em>&nbsp;&nbsp;<span id="F6"></span><input id="regperm" name="regperm" required="required" size="50" type="text" /></td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td colspan="4"><strong><br />*Tax Return Year:</strong>&nbsp;&nbsp;<span id="F7" style="padding-left: 1.2rem;"></span><input id="tryear" name="tryear" required="required" size="50" type="text" /></td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td colspan="4"><strong><br />*Tax Return Filing Frequency:</strong>&nbsp;&nbsp;<span id="F8" style="padding-left: 1.2rem;"></span><select id="trFrequency" name="trFrequency" required="required"><option selected="selected"></option><option value="TSPB - Quarterly">TSPB - Quarterly</option><option value="TSPB - Semi-Monthly">TSPB - Semi-Monthly</option></select></td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td colspan="2"><strong><br />Semi-Monthly Tax Return Period:</strong>&nbsp;&nbsp;<span style="padding-left: 1.2rem;"></span><select id="semi" name="semi"><option selected="selected"></option><option value="1/1 – 1/15">1/1 – 1/15</option><option value="1/16 – 1/31">1/16 – 1/31</option><option value="2/1 – 2/15">2/1 – 2/15</option><option value="2/16 – 2/28 or 2/29">2/16 – 2/28 or 2/29</option><option value="3/1 – 3/15">3/1 – 3/15</option><option value="3/16 – 3/31">3/16 – 3/31</option><option value="4/1 – 4/15">4/1 – 4/15</option><option value="4/16 – 4/30">4/16 – 4/30</option><option value="5/1 – 5/15">5/1 – 5/15</option><option value="5/16 – 5/31">5/16 – 5/31</option><option value="6/1 – 6/15">6/1 – 6/15</option><option value="6/16 – 6/30">6/16 – 6/30</option><option value="7/1 – 7/15">7/1 – 7/15</option><option value="7/16 – 7/31">7/16 – 7/31</option><option value="8/1 – 8/15">8/1 – 8/15</option><option value="8/16 – 8/31">8/16 – 8/31</option><option value="9/1 – 9/15">9/1 – 9/15</option><option value="9/16 - 9/25 Non-EFT">9/16 - 9/25 Non-EFT</option><option value="9/16 - 9/26 EFT">9/16 - 9/26 EFT</option><option value="9/26 - 9/30 Non-EFT">9/26 - 9/30 Non-EFT</option><option value="9/27 - 9/30 EFT">9/27 - 9/30 EFT</option><option value="10/1 – 10/15">10/1 – 10/15</option><option value="10/16 – 10/31">10/16 – 10/31</option><option value="11/1 – 11/15">11/1 – 11/15</option><option value="11/16 – 11/30">11/16 – 11/30</option><option value="12/1 – 12/15">12/1 – 12/15</option><option value="12/16 – 12/31">12/16 – 12/31</option></select></td>
+							<td colspan="2"><strong><br />Quarterly Tax Return Period:</strong>&nbsp;&nbsp;<span style="padding-left: 1.2rem;"></span><select id="quarterly" name="quarterly"><option selected="selected"></option><option value="January – March">January – March</option><option value="April – June">April – June</option><option value="July – September">July – September</option><option value="October – December">October – December</option></select></td>
+						</tr>
+						<tr>
+							<td><strong><br />Comments</strong></td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td colspan="4"><textarea id="comm" cols="100" name="comm" rows="5"></textarea></td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td colspan="4"><strong>Attach TTB F 5130.Pilot-1</strong></td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td colspan="4">Include 1 signed TTB Form 5130.Pilot-1.</td>
+						</tr>
+						<tr>
+							<td colspan="4">
+								<p><strong>Accepted file types: Word, Excel, PDF, JPG, PNG.&nbsp;Combined file size limit: 20MB. Valid characters for file name: A-Z a-z 0-9 ._-</strong></p>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<p><strong>Remember: If you owe tax, you must submit the payment on or before the excise tax due date, to avoid penalties and interest. </strong></p>
+							</td>
+						</tr>
+						<tr>
+							<td style="display: block;" colspan="4"><strong>Attachments</strong>&nbsp;&nbsp;&nbsp;<input id="attachment" multiple="multiple" name="attachment[]" type="file" /></td>
+						</tr>
+						<tr>
+							<td colspan="4">
+								<div>&nbsp;</div>
+								<div class="g-recaptcha" data-sitekey="6LdQkh8UAAAAAMv2K2nFjoNNLr7ICOco5j1vCTY_">&nbsp;</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4"><em><br />By submitting this form, you agree that TTB may transmit your confidential returns and return information, as defined by 26 U.S.C. 6103, to the email address submitted on this form for the purpose of processing your request.</em></td>
+						</tr>
+						<tr>
+							<td colspan="4">
+								<p><br /><input id="submit" name="submit" type="submit" value="Submit" />&nbsp;&nbsp;<input id="reset" name="reset" type="reset" value="Reset" /></p>
+								<p>If your submission is successful, you will be taken to a “Thank You” page, and you will receive an email confirming your submission within an hour or so. If you do not receive an email confirmation, please resubmit your message.</p>
+							</td>
+						</tr>
+						<!--<tr>
+							<td colspan="4"><br /> <input id="submitBtn" onclick="checkForm()" name="submitBtn" type="button" value="Submit" /> &nbsp;&nbsp;&nbsp; <input type="reset" value="Reset" />&nbsp;<br /><br />If your submission is successful, you will be taken to a “Thank You” page, and you will receive an email confirming your submission <br />within an hour or so. If you do not receive an email confirmation, please resubmit your message.</td>
+						</tr>-->
+						<!--<tr>
+							<td colspan="4">
+								<div id="importantFooterNote">
+                                        <p><img src="images/info.png" alt="phone icon" width="30" height="30" align="absmiddle" /><strong> Note</strong></p>
+                                        <p>We welcome your emails, but please be aware that email is not a secure method of communication. We strongly advise you not to include personal information (e.g., Social Security Number, Employer Identification Number, Registry/Permit number, etc.) in your email or attached documents. To help us assist you, identify the type of business that you would like to discuss, and let us know when and how we may contact you for additional information.</p>
+                                    </div>
+								<div id="contactFooter">
+									<p><img src="/images/phone.png" alt="Green icon with a white phone." width="29" height="29" /> <strong>CONTACT US</strong> - If you have general questions please contact us online using the <a href="https://www.ttb.gov/contact-nrc">National Revenue Center Contact Form</a>, or call <strong>877-882-3277 / 877-TTB-FAQS (toll free)</strong>, between the hours of 8 a.m. to 5 p.m. EST, Monday through Friday.</p>
+								</div>
+							</td>
+						</tr>-->
+					</tbody>
+				</table>
+				<p>&nbsp;</p>
+			</form>
+			<!-- InstanceEndEditable -->
+		</div>
+	</div>
+	<div id="bodyfooter">
+		<table style="width: 100%;" border="0">
+			<tbody>
+				<tr>
+					<td align="left">Page last updated: August 1, 2022</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
