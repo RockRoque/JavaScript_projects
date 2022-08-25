@@ -1,7 +1,5 @@
-
 <h1>Dynamic Drop-down Menus</h1>
 <p>This small project demonstrates the use of of drop-down menu dependencies based on user selection from another drop-down menu.</p>
-<hr>
 <h2>Goals</h2>
 <ul>
 <li>Create 2 drop-down menus each containing different data</li>
