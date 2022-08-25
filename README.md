@@ -9,6 +9,6 @@
 <li>If the user changes their mind on the first selection, the list in the second drop-down resets before populating with the updated data based on the new selection from the user</li>
 </ul>
 <p>
-For this example, I used a tax filing schedule with only 2 options in the first drop down menu, the first, <strong><i>TSBP - Quarterly</i></strong> and the second being, <strong><i>TSBP - Semi-Monthly</i></strong>.<br>
+For this example, I used a tax filing schedule with only 2 options in the first drop down menu, the first, <strong><i>TSBP - Quarterly</i></strong> and the second being, <strong><i>TSBP - Semi-Monthly</i></strong>. Depending on the users selection in the first drop-down menu, the second will populate with related data. <br>
 
 </p>
