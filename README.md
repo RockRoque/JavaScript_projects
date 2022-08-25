@@ -12,4 +12,4 @@
 For this example, I used a tax filing schedule with only 2 options in the first drop down menu, the first, <strong><i>TSBP - Quarterly</i></strong> and the second being, <strong><i>TSBP - Semi-Monthly</i></strong>. Depending on the users selection in the first drop-down menu, the second will populate with related data. <br>
 
 </p>
-<p><strong>Note: this solution is based soley in JavaScript and HTML and does not require the use of JQuery or any other libraries/</strong></p>
+<p><strong>Note:</strong> this solution is based soley in JavaScript and HTML and does not require the use of JQuery or any other libraries.</p>
