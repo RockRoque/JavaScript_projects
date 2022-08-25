@@ -8,30 +8,23 @@
 <script src="projects_JavaScript
 /dynamic-drop-downs.js"></script>
 </head>
-
 <body>
-
-
-
-
-<div class="category_div" id="category_div">Tax Filing Frequency:
-    <select name="category" class="required-entry" id="category" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
-        <option value="">Select filing frequency</option>
-        <option value="quarterly">TSPB &#45; Quarterly</option>
-        <option value="semi">TSPB &#45; Semi-Monthly</option>
-
-    </select>
-</div>
-<div class="sub_category_div" id="sub_category_div">Tax Return Period:
-    <script type="text/javascript" language="JavaScript">
-        document.write('<select name="subcategory" id="subcategory"><option value="">Select return period</option></select>')
-    </script>
-    <noscript>
-        <select name="subcategory" id="subcategory" >
-            <option value="">Select return period</option>
+    <div class="category_div" id="category_div">Tax Filing Frequency:
+        <select name="category" class="required-entry" id="category" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
+            <option value="">Select filing frequency</option>
+            <option value="quarterly">TSPB &#45; Quarterly</option>
+            <option value="semi">TSPB &#45; Semi-Monthly</option>
         </select>
-    </noscript>
-</div>
-
-    </body>
+    </div>
+    <div class="sub_category_div" id="sub_category_div">Tax Return Period:
+        <script type="text/javascript" language="JavaScript">
+            document.write('<select name="subcategory" id="subcategory"><option value="">Select return period</option></select>')
+        </script>
+        <noscript>
+            <select name="subcategory" id="subcategory" >
+                <option value="">Select return period</option>
+            </select>
+        </noscript>
+    </div>
+</body>
 </html>
