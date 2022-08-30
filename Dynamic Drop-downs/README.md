@@ -11,3 +11,7 @@ For this example, I used a tax filing schedule with only 2 options in the first 
 
 </p>
 <p><strong>Note:</strong> this solution is based soley in JavaScript and HTML and does not require the use of JQuery or any other libraries.</p>
+
+
+https://user-images.githubusercontent.com/105023713/187453716-b1495f4f-7938-43cc-aab3-a9589b04bf6c.mov
+
