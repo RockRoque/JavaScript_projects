@@ -1,24 +1,25 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drop-down Menu</title>
-<script src="dynamic-drop-downs.js"></script>
+    <title>Dependent Dropdown Menus</title>
+
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <select id="first-dropdown">
-      <option value="option1">Option 1</option>
-      <option value="option2">Option 2</option>
-      <option value="option3">Option 3</option>
-    </select>
-
-    <select id="second-dropdown">
-      <option value="option1">Option 1</option>
-      <option value="option2">Option 2</option>
-      <option value="option3">Option 3</option>
-    </select>
+    <div>
+        <label for="frequency">Tax Filing Frequency:</label><br>
+      <select id="frequency">
+        <option value="select">Select filing frequency</option>
+        <option value="quarterly">Quarterly</option>
+        <option value="semi-monthly">Semi Monthly</option>
+      </select>
+      <br>
+      <label for="range">Tax Return Period:</label><br>
+      <select id="range"></select>        
+    </div>
 </body>
+<script src="script.js"></script>
 </html>
